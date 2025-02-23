@@ -1,0 +1,12 @@
+README(7)	       Miscellaneous Information Manual		     README(7)
+
+NAME
+     batper - show battaries' percentage
+
+DESCRIPTION
+     batper prints battery number with percentage on each line.
+
+SEE ALSO
+     batper(1)
+
+batper			       February 23, 2025			batper
