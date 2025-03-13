@@ -32,6 +32,8 @@ int main(void)
         if (sysctl(mib, 5, &sensor, &(size_t){sizeof(sensor)}, NULL, 0) < 0)
             err(1, "sysctl()");
         max = sensor.value;
+        if (max == 0)
+            continue;
 
         mib[4] = 3;
         if (sysctl(mib, 5, &sensor, &(size_t){sizeof(sensor)}, NULL, 0) < 0)
